@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  <script defer src="bundle.js"></script></head>
+  <body>
+    <section>
+      <main>
+        <div class="header-text">Weather App</div>
+        <form action="">
+          <div class="search-container">
+            <input
+              type="text"
+              id="search-input"
+              name="search-input"
+              placeholder="Enter your location"
+            />
+            <button class="search-button">Search</button>
+          </div>
+        </form>
+        <div class="card-container hide">
+          <div class="card card-active">
+            <div class="card-location-condition">
+              <div class="location-wrapper">
+                <div class="city"></div>
+                <div class="state"></div>
+              </div>
+              <div class="condition-wrapper">
+                <img src="#" alt="" id="weather-icon" />
+                <div class="condition"></div>
+              </div>
+            </div>
+            <div class="card-temperature">
+              <div class="temperature"></div>
+              <div class="feels-like-wrapper">
+                <div class="feels-like-label">Feels like</div>
+                <div class="feels-like-temperature"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-2 card-active">
+            <div class="chance-of-rain info-container">
+              <div class="chance-of-rain-stat stat"></div>
+              <div class="chance-of-rain-label label">Chance of rain</div>
+            </div>
+            <div class="wind-speed info-container">
+              <div class="wind-speed-stat stat"></div>
+              <div class="wind-speed-label label">Wind</div>
+            </div>
+            <div class="humidity info-container">
+              <div class="humidity-stat stat"></div>
+              <div class="humidity-label label">Humidity</div>
+            </div>
+            <div class="sunrise info-container">
+              <div class="sunrise-stat stat"></div>
+              <div class="sunrise-label label">Sunrise</div>
+            </div>
+            <div class="sunset info-container">
+              <div class="sunset-stat stat"></div>
+              <div class="sunset-label label">Sunset</div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
