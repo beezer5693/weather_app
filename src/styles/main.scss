@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(44, 43, 57);
+}
+
+section,
+main {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding-top: 120px;
+  min-width: 700px;
+}
+
+.header-text {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: white;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.search-container {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  width: 100%;
+  padding: 12px 0px 12px 18px;
+  border-radius: 25px;
+  border: 1px solid rgb(49, 48, 64);
+  outline: none;
+  background: rgb(49, 48, 64);
+  color: rgb(235, 235, 235);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+input::placeholder {
+  color: rgb(176, 176, 176);
+  font-size: 0.8rem;
+}
+
+button {
+  position: absolute;
+  right: 7px;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(to right bottom, #4776e6, #8e54e9);
+  color: white;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: opacity 300ms;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.card,
+.card-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgb(49, 48, 64);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-location-condition {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.location-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.location-wrapper div {
+  color: white;
+}
+
+.city {
+  margin-right: 5px;
+}
+
+.condition-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#weather-icon {
+  height: 50px;
+  width: 50px;
+  margin-right: 7px;
+}
+
+.condition {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: white;
+}
+
+.card-temperature {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: flex-start;
+}
+
+.temperature {
+  font-size: 2.2rem;
+  color: white;
+  margin-bottom: 3px;
+}
+
+.feels-like-wrapper {
+  display: flex;
+}
+
+.feels-like-wrapper div {
+  font-size: 0.7rem;
+  color: white;
+}
+
+.feels-like-label {
+  margin-right: 3px;
+  font-weight: 300;
+}
+
+.feels-like-temperature {
+  font-weight: 500;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.label,
+.stat {
+  color: white;
+}
+
+.stat {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.label {
+  font-size: 0.7rem;
+  font-weight: 200;
+}
