@@ -12,17 +12,15 @@
         <div class="header-text">Weather App</div>
         <form action="">
           <div class="search-container">
-            <input
-              type="text"
-              id="search-input"
-              name="search-input"
-              placeholder="Enter your location"
-            />
+            <input type="text" id="search-input" name="search-input" placeholder="Enter your location" />
             <button class="search-button">Search</button>
           </div>
         </form>
         <div class="card-container hide">
-          <div class="card card-active">
+          <div class="label-container">
+            <div class="current-forecast-label">Today's Weather</div>
+          </div>
+          <div class="card">
             <div class="card-location-condition">
               <div class="location-wrapper">
                 <div class="city"></div>
@@ -41,7 +39,7 @@
               </div>
             </div>
           </div>
-          <div class="card-2 card-active">
+          <div class="card-2">
             <div class="chance-of-rain info-container">
               <div class="chance-of-rain-stat stat"></div>
               <div class="chance-of-rain-label label">Chance of rain</div>
@@ -61,6 +59,53 @@
             <div class="sunset info-container">
               <div class="sunset-stat stat"></div>
               <div class="sunset-label label">Sunset</div>
+            </div>
+          </div>
+          <div class="card-3">
+            <div class="weekly">
+              <div class="day-of-week day-one"></div>
+              <img src="" alt="" class="day-icon" id="day-one-icon" />
+              <div class="day-temps day-one-temps">
+                <div class="temps temp-hi day-one-hi"></div>
+                <div>/</div>
+                <div class="temps temp-lo day-one-lo"></div>
+              </div>
+            </div>
+            <div class="weekly">
+              <div class="day-of-week day-two"></div>
+              <img src="" alt="" class="day-icon" id="day-two-icon" />
+              <div class="day-temps day-two-temps">
+                <div class="temps temp-hi day-two-hi"></div>
+                <div>/</div>
+                <div class="temps temp-lo day-two-lo"></div>
+              </div>
+            </div>
+            <div class="weekly">
+              <div class="day-of-week day-three"></div>
+              <img src="" alt="" class="day-icon" id="day-three-icon" />
+              <div class="day-temps day-three-temps">
+                <div class="temps temp-hi day-three-hi"></div>
+                <div>/</div>
+                <div class="temps temp-lo day-three-lo"></div>
+              </div>
+            </div>
+            <div class="weekly">
+              <div class="day-of-week day-four"></div>
+              <img src="" alt="" class="day-icon" id="day-four-icon" />
+              <div class="day-temps day-four-temps">
+                <div class="temps temp-hi day-four-hi"></div>
+                <div>/</div>
+                <div class="temps temp-lo day-four-lo"></div>
+              </div>
+            </div>
+            <div class="weekly">
+              <div class="day-of-week day-five"></div>
+              <img src="" alt="" class="day-icon" id="day-five-icon" />
+              <div class="day-temps day-five-temps">
+                <div class="temps temp-hi day-five-hi"></div>
+                <div>/</div>
+                <div class="temps temp-lo day-five-lo"></div>
+              </div>
             </div>
           </div>
         </div>
