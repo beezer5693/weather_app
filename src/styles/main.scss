@@ -14,6 +14,7 @@ body {
   width: 100vw;
   height: 100vh;
   background: rgb(44, 43, 57);
+  color: white;
 }
 
 section,
@@ -27,7 +28,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  padding-top: 120px;
+  padding-top: 80px;
   min-width: 700px;
 }
 
@@ -47,7 +48,7 @@ form {
 
 .search-container {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   position: relative;
   display: flex;
   align-items: center;
@@ -87,6 +88,18 @@ button:hover {
   opacity: 0.9;
 }
 
+.label-container {
+  display: flex;
+  justify-content: start;
+  width: 50%;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.current-forecast-label {
+  font-size: 1.2rem;
+}
+
 .card-container {
   display: flex;
   flex-direction: column;
@@ -99,7 +112,8 @@ button:hover {
 }
 
 .card,
-.card-2 {
+.card-2,
+.card-3 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -111,7 +125,8 @@ button:hover {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.card {
+.card,
+.card-2 {
   margin-bottom: 20px;
 }
 
@@ -197,11 +212,59 @@ button:hover {
 }
 
 .stat {
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 0.9rem;
   margin-bottom: 8px;
 }
 
 .label {
   font-size: 0.7rem;
   font-weight: 200;
+}
+
+.weekly {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.day-of-week {
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: white;
+}
+
+.day-one {
+  font-weight: 500;
+}
+
+.day-icon {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.day-temps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-temps div {
+  font-weight: 300;
+}
+
+.temps {
+  color: white;
+  font-size: 0.7rem;
+}
+
+.temp-hi {
+  margin-right: 2px;
+}
+
+.temp-lo {
+  margin-left: 2px;
 }
