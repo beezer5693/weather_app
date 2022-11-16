@@ -35,7 +35,7 @@ function compileWeatherDataIntoObject(data) {
 }
 
 async function fetchWeatherData(location) {
-  const endPoint = `http://api.weatherapi.com/v1/forecast.json?key=27c7cc7f7be44d9c8c831838221511&q=${location}&days=1&aqi=no&alerts=no`;
+  const endPoint = `https://api.weatherapi.com/v1/forecast.json?key=27c7cc7f7be44d9c8c831838221511&q=${location}&days=1&aqi=no&alerts=no`;
   try {
     const response = await fetch(endPoint);
     const data = compileWeatherDataIntoObject(await response.json());
