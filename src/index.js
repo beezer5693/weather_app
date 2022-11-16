@@ -69,7 +69,7 @@ function displayWeatherData(weatherData) {
   temperature.innerHTML = `${weatherData.temperature.f}&#176;`;
   feelsLikeTemperature.innerHTML = `${weatherData.feelsLike.f}&#176;`;
   chanceOfRainStat.innerText = `${weatherData.chainceOfRain}%`;
-  windSpeedStat.innerText = `${weatherData.wind}`;
+  windSpeedStat.innerText = `${weatherData.wind} MPH`;
   humidityStat.innerText = `${weatherData.humidity}%`;
   sunriseStat.innerText = `${weatherData.sunrise}`;
   sunsetStat.innerText = `${weatherData.sunset}`;
