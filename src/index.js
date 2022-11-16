@@ -53,9 +53,7 @@ function displayWeatherData(weatherData) {
   const weatherIcon = document.getElementById('weather-icon');
   const condition = document.querySelector('.condition');
   const temperature = document.querySelector('.temperature');
-  const feelsLikeTemperature = document.querySelector(
-    '.feels-like-temperature'
-  );
+  const feelsLikeTemperature = document.querySelector('.feels-like-temperature');
   const chanceOfRainStat = document.querySelector('.chance-of-rain-stat');
   const windSpeedStat = document.querySelector('.wind-speed-stat');
   const humidityStat = document.querySelector('.humidity-stat');
