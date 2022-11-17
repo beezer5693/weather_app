@@ -4,11 +4,11 @@ function changeDateToDay(date) {
   return day;
 }
 
-function adjustTime(str) {
-  const arr = str.split('');
-  arr.splice(0, 1);
-  const newSrtring = arr.join('');
-  return newSrtring;
+function formatTime(str) {
+  const time = str.split('');
+  time.splice(0, 1);
+  const formattedTime = time.join('');
+  return formattedTime;
 }
 
-export { changeDateToDay, adjustTime };
+export { changeDateToDay, formatTime };

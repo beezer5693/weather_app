@@ -1,4 +1,4 @@
-import { changeDateToDay, adjustTime } from './text';
+import { changeDateToDay, formatTime } from './text';
 
 function currentWeatherObject(data) {
   const currentWeather = {
@@ -7,8 +7,8 @@ function currentWeatherObject(data) {
     condition: data.current.condition.text,
     conditionIcon: data.current.condition.icon,
     chainceOfRain: data.forecast.forecastday[0].day.daily_chance_of_rain,
-    sunrise: adjustTime(data.forecast.forecastday[0].astro.sunrise),
-    sunset: adjustTime(data.forecast.forecastday[0].astro.sunset),
+    sunrise: formatTime(data.forecast.forecastday[0].astro.sunrise),
+    sunset: formatTime(data.forecast.forecastday[0].astro.sunset),
     temperature: {
       f: Math.round(data.current.temp_f),
       c: Math.round(data.current.temp_c),
