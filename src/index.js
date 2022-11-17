@@ -182,11 +182,13 @@ function resetInput() {
   form.reset();
 }
 
-searchButton.addEventListener('click', async (e) => {
+async function init(e) {
   e.preventDefault();
   const weatherData = await fetchWeatherData(searchBox.value);
   displayCurrentWeather(weatherData[0]);
   displayFiveDayForecast(weatherData[1]);
   showWeatherDisplay();
   resetInput();
-});
+}
+
+searchButton.addEventListener('click', init);
