@@ -1,5 +1,5 @@
 // Converts date to day of the week, ex: '11-16-2022' to 'Wednesday'
-function changeDateToDay(date) {
+function convertDateToDay(date) {
   const formattedDate = date.replace(/-/g, '/');
   const day = new Date(formattedDate).toLocaleString('en-us', { weekday: 'long' });
   return day;
@@ -13,4 +13,4 @@ function formatTime(str) {
   return formattedTime;
 }
 
-export { changeDateToDay, formatTime };
+export { convertDateToDay, formatTime };

@@ -1,4 +1,4 @@
-import { changeDateToDay, formatTime } from './text';
+import { convertDateToDay, formatTime } from './text';
 
 function currentWeatherObject(data) {
   const currentWeather = {
@@ -26,35 +26,35 @@ function currentWeatherObject(data) {
 function fiveDayForecastObject(data) {
   const fiveDayForeCast = {
     dayOne: {
-      day: changeDateToDay(data.forecast.forecastday[0].date),
+      day: convertDateToDay(data.forecast.forecastday[0].date),
       condition: data.forecast.forecastday[0].day.condition.text,
       conditionIcon: data.forecast.forecastday[0].day.condition.icon,
       hi: Math.round(data.forecast.forecastday[0].day.maxtemp_f),
       lo: Math.round(data.forecast.forecastday[0].day.mintemp_f),
     },
     dayTwo: {
-      day: changeDateToDay(data.forecast.forecastday[1].date),
+      day: convertDateToDay(data.forecast.forecastday[1].date),
       condition: data.forecast.forecastday[1].day.condition.text,
       conditionIcon: data.forecast.forecastday[1].day.condition.icon,
       hi: Math.round(data.forecast.forecastday[1].day.maxtemp_f),
       lo: Math.round(data.forecast.forecastday[1].day.mintemp_f),
     },
     dayThree: {
-      day: changeDateToDay(data.forecast.forecastday[2].date),
+      day: convertDateToDay(data.forecast.forecastday[2].date),
       condition: data.forecast.forecastday[2].day.condition.text,
       conditionIcon: data.forecast.forecastday[2].day.condition.icon,
       hi: Math.round(data.forecast.forecastday[2].day.maxtemp_f),
       lo: Math.round(data.forecast.forecastday[2].day.mintemp_f),
     },
     dayFour: {
-      day: changeDateToDay(data.forecast.forecastday[3].date),
+      day: convertDateToDay(data.forecast.forecastday[3].date),
       condition: data.forecast.forecastday[3].day.condition.text,
       conditionIcon: data.forecast.forecastday[3].day.condition.icon,
       hi: Math.round(data.forecast.forecastday[3].day.maxtemp_f),
       lo: Math.round(data.forecast.forecastday[3].day.mintemp_f),
     },
     dayFive: {
-      day: changeDateToDay(data.forecast.forecastday[4].date),
+      day: convertDateToDay(data.forecast.forecastday[4].date),
       condition: data.forecast.forecastday[4].day.condition.text,
       conditionIcon: data.forecast.forecastday[4].day.condition.icon,
       hi: Math.round(data.forecast.forecastday[4].day.maxtemp_f),
