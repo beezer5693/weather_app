@@ -86,8 +86,8 @@ async function fetchWeatherData(location) {
   try {
     const response = await fetch(endPoint, { mode: 'cors' });
     const data = await response.json();
-    const currentWeatherData = currentWeatherObject(await data);
-    const fiveDayForeCastData = fiveDayForecastObject(await data);
+    const currentWeatherData = currentWeatherObject(data);
+    const fiveDayForeCastData = fiveDayForecastObject(data);
     return [currentWeatherData, fiveDayForeCastData];
   } catch (error) {
     console.log('No search results found');
