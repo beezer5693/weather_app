@@ -7,7 +7,7 @@ const searchButton = document.querySelector('.search-button');
 const searchBox = document.querySelector('#search-input');
 const form = document.querySelector('form');
 
-async function fetchWeatherData(location) {
+const fetchWeatherData = async (location) => {
   const endPoint = `https://api.weatherapi.com/v1/forecast.json?key=27c7cc7f7be44d9c8c831838221511&q=${location}&days=5&aqi=no&alerts=no`;
   try {
     const response = await fetch(endPoint, { mode: 'cors' });
@@ -19,15 +19,15 @@ async function fetchWeatherData(location) {
     console.log('No search results found');
     return null;
   }
-}
+};
 
-async function init(e) {
+const init = async (e) => {
   e.preventDefault();
   const weatherData = await fetchWeatherData(searchBox.value);
   displayCurrentWeather(weatherData[0]);
   displayFiveDayForecast(weatherData[1]);
   showWeatherDisplay();
   resetInput(form);
-}
+};
 
 searchButton.addEventListener('click', init);
